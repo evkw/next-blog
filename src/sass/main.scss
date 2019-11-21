@@ -5,12 +5,15 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "components/search";
+
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
 @import "layout/footer";
+@import "layout/grid";
 @import "layout/header";
 
 @import "pages/home";

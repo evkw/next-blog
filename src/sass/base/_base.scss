@@ -16,3 +16,8 @@ body {
     background-size: cover;
     background-position: top;
 }
+
+// Ensure SVG icons are responsive
+svg {
+  height: 100%;
+}
