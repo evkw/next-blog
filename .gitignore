@@ -1,0 +1,12 @@
+# compiled output
+/dist
+/src/dist
+/tmp
+/out-tsc
+/.next
+
+# dependencies
+/node_modules
+
+# System Files
+.env
