@@ -1,12 +1,15 @@
 
+import '../sass/main.scss';
+
 import Post from '../components/post';
 import { getPosts } from '../api/ghost';
+import IconBubble from '../components/icons/IconBubble';
 
-const Home = (props) => {
-    console.log(props)
+const Home = (props: HomeProps) => {
     return (
         <main>
-            {props.posts.map(post => <Post post={post}></Post>)}
+            <IconBubble />
+            {props.posts.map(post => <Post key={post.id} post={post}></Post>)}
         </main>
     )
 };
@@ -16,5 +19,8 @@ Home.getInitialProps = async () => {
     return { posts: posts }
 }
 
-
 export default Home;
+
+interface HomeProps {
+    posts: any;
+}

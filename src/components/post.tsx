@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 const Post = (props) => {
-    console.log(props.post)
     const { post } = props;
     return (
         <article>

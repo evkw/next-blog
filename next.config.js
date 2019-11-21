@@ -6,9 +6,7 @@ const TsConfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 const webpack = require('webpack')
 module.exports = withSass({
   webpack: (config) => {
-    config.plugins.push(
-      new webpack.EnvironmentPlugin(process.env)
-    )
+    config.plugins.push(new webpack.EnvironmentPlugin(process.env))
 
     if(config.resolve.plugins) {
         config.resolve.plugins.push(new TsConfigPathsPlugin())
