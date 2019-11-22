@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
     box-sizing: border-box;
     background-image: linear-gradient(to right bottom, rgb(109, 50, 124), rgb(72, 93, 166), rgb(0, 161, 186), rgb(1, 177, 142), rgb(50, 179, 123));
     background-size: cover;

@@ -22,10 +22,13 @@ const Home = (props: HomeProps) => {
 
                     <Search className="top-nav__search"/>
                 </nav>
-
+                
+                <div className="border"></div>
             </header>
-            <main className="grid-container">
-                {props.posts.map(post => <Post key={post.id} post={post}></Post>)}
+            <main className="main grid-container">
+                <div className="articles">
+                    {props.posts.map(post => <Post key={post.id} post={post}></Post>)}
+                </div>
             </main>
         </div>
 
