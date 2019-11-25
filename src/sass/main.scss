@@ -8,15 +8,16 @@
 
 @import "components/post";
 @import "components/search";
+@import "components/author";
 
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
+@import "layout/grid";
 @import "layout/articles";
 @import "layout/footer";
-@import "layout/grid";
 @import "layout/header";
 
 @import "pages/home";

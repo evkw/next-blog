@@ -1,9 +1,9 @@
-import IconBubble from './icons/IconBubble';
+import IconBubble from '../icons/IconBubble';
 
 import PostPublished from './PostPublished';
 import PostBodyLink from './PostHeaderLink';
 import PostHeader from './PostHeader';
-import Tag from './Tag';
+import Tag from '../Tag';
 
 const Post = (props) => {
     const { post } = props;

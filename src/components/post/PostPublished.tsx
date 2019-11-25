@@ -1,4 +1,4 @@
-import IconCalendar from './icons/IconCalendar';
+import IconCalendar from '../icons/IconCalendar';
 
 import moment from 'moment';
 
