@@ -4,15 +4,40 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    position: relative;
+    box-shadow: 0 1.5rem 4rem rgba($color-darkest-gray, 0.15);
 
-    &__tag {
+    &__tags {
         color: #fff;
-        padding: 0.4rem, 2.5rem;
         font-weight: 600;
+        position: absolute;
+        top: -15px;
+        text-align: center;
+        width: 100%;
+
+        & > a:link, & > a:visited {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: #fff;
+        }
     }
 
     &__header {
-        padding: 1.5rem;
+        flex: 0 0 45%;
+
+        &-image {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        &-image-link, &-image-link > * {
+
+            height: 100%;
+            display: block;
+            
+        }
     }
 
     &__body {
@@ -32,6 +57,7 @@
         &-published-icon {
             height: 2rem;
             width: 2rem;
+            fill: currentColor;
         }
 
         &-published-text {
@@ -51,7 +77,7 @@
         &-excerpt {
             margin-bottom: 4rem;
             font-size: 1.5rem;
-            color: $color-dark-gray;
+            color: inherit;
         }
     }
 
@@ -62,10 +88,13 @@
         align-items: center;
         font-size: 1rem;
         padding: 1.5rem 2rem;
-        flex: 0 0 10%;
+        height: 3.5rem;
 
         &-read {
-            flex: 0 0 20%;
+            font-size: 1.4rem;
+            flex: 0 0 30%;
+            letter-spacing: 0.5;
+            font-weight: 500;
         }
 
         &-icon {
@@ -73,6 +102,7 @@
             flex: 1;
             height: 2rem;
             width: 2rem;
+            fill: currentColor;
         }
     }
 }

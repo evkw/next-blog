@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const PostHeaderLink = (props) => {
+const PostBodyLink = (props) => {
     const { slug, title } = props;
     return (
         <Link href={`/[slug]`} as={`/${slug}`}>
@@ -11,4 +11,4 @@ const PostHeaderLink = (props) => {
     )
 };
 
-export default PostHeaderLink;
+export default PostBodyLink;

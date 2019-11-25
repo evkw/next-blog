@@ -1,18 +1,28 @@
 import IconBubble from './icons/IconBubble';
 
 import PostPublished from './PostPublished';
-import PostHeaderLink from './PostHeaderLink';
+import PostBodyLink from './PostHeaderLink';
+import PostHeader from './PostHeader';
+import Tag from './Tag';
 
 const Post = (props) => {
     const { post } = props;
-    const postClass = post.featured === true ? 'post feature' : 'post'
+    const postStyle = {
+        backgroundImage: `url(${post.feature_image})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        color: '#fff'
+    };
+
     return (
-        <article className={postClass}>
-            <div className="post__tags"></div>
+        <article className={post.featured === true ? 'post feature' : 'post'} style={post.featured === false ? postStyle : null}>
+            <div className="post__tags">
+               <Tag post={post}/>
+            </div>
+            <PostHeader post={post} />
             <div className="post__body">
-                {post.featured === true ? <header></header> : null}
                 <PostPublished published_at={post.published_at} />
-                <PostHeaderLink slug={post.slug} title={post.title} />
+                <PostBodyLink slug={post.slug} title={post.title} />
                 <p className="post__body-excerpt">{post.custom_excerpt}</p>
             </div>
 

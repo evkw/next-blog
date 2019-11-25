@@ -14,12 +14,6 @@ const Home = (props: HomeProps) => {
                         <a href="/">Icon</a>
                     </div>
 
-                    {/* <ul className="top-nav__list">
-                        <li className="top-nav__list-item">
-                            <a className="top-nav__link" href="#">Home</a>
-                        </li>
-                    </ul> */}
-
                     <Search className="top-nav__search"/>
                 </nav>
                 

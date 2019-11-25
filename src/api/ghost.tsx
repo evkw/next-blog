@@ -8,6 +8,7 @@ const api = new GhostContentAPI(GhostApiSettings);
 export async function getPosts() {
     return await api.posts
       .browse({
+        include: 'tags',
         limit: "all"
       })
       .catch(err => {
