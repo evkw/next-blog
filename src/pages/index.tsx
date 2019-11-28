@@ -1,10 +1,11 @@
 
 import '../sass/main.scss';
 
-import Post from '../components/post/Post';
 import { getPosts, getAuthor, getTags } from '../api/ghost';
-import { Header } from 'src/components/header/Header';
-import { Footer } from 'src/components/footer/Footer';
+import Header from '@layouts/Header';
+import Post from '@layouts/Post';
+import Footer from '@layouts/Footer';
+
 
 const Home = (props: HomeProps) => {
     return (

@@ -1,9 +1,9 @@
-import IconBubble from '../icons/IconBubble';
+import Tag from '@components/Tag';
+import PostHeader from '@components/PostHeader';
+import PostPublished from '@components/PostPublished';
+import PostBodyLink from '@components/PostHeaderLink';
+import IconBubble from '@components/icons/IconBubble';
 
-import PostPublished from './PostPublished';
-import PostBodyLink from './PostHeaderLink';
-import PostHeader from './PostHeader';
-import Tag from '../Tag';
 
 const Post = (props) => {
     const { post } = props;

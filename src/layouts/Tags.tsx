@@ -1,4 +1,4 @@
-import Tag from '../Tag';
+import Tag from '@components/Tag';
 
 export const Tags = (props) => {
     const { tags } = props;

@@ -1,6 +1,6 @@
-import IconCalendar from '../icons/IconCalendar';
 
 import moment from 'moment';
+import IconCalendar from './icons/IconCalendar';
 
 const PostPublished = (props) => {
     const { published_at } = props;

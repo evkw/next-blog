@@ -1,6 +1,6 @@
-import IconGithub from '../icons/IconGithub';
-import IconTwitter from '../icons/IconTwitter';
-import IconLinkedIn from '../icons/IconLinkedIn';
+import IconGithub from './icons/IconGithub';
+import IconTwitter from './icons/IconTwitter';
+import IconLinkedIn from './icons/IconLinkedIn';
 
 export const Author = (props) => {
     const {author} = props;

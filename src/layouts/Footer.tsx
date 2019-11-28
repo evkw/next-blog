@@ -1,6 +1,6 @@
-import LatestArticles from './LatestArticles'
-import Tags from './Tags'
-import Author from './Author'
+import Author from '@components/Author'
+import LatestArticles from '@components/LatestArticles';
+import Tags from './Tags';
 
 export const Footer = (props) => {
     const { author, tags } = props;
@@ -19,5 +19,7 @@ export const Footer = (props) => {
         </footer>
     )
 }
+
+export default Footer;
 
 // https://themeforest.net/item/breek-a-masonry-theme-for-ghost/13112831
