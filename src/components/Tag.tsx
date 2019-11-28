@@ -1,11 +1,16 @@
 import Link from 'next/link'
 
 const Tag = (props) => {
-    const { post } = props;
+    const { tag } = props;
+    if (!tag) {
+        return null;
+    }
     return (
-        <Link href={`/[slug]`} as={`/${post.slug}`}>
-            <a className="ctag">{post.tags[0].name}</a>
-        </Link>
+        <div className="tag">
+            <Link href={`/[slug]`} as={`/${tag.url}`}>
+                <a className="ctag">{tag.name}</a>
+            </Link>
+        </div>
     )
 }
 

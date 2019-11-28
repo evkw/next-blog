@@ -4,11 +4,10 @@ import IconLinkedIn from '../icons/IconLinkedIn';
 
 export const Author = (props) => {
     const {author} = props;
-    console.log(author);
 
     return (
         <div>
-            <h3 className="header-tertiary header-white">Author</h3>
+            <h3 className="header-tertiary header-white">About me</h3>
             <div className="border mb-medium"></div>
             <div className="author">
                 <img className="author__avatar" src={author.profile_image} />

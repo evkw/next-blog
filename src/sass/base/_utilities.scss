@@ -20,3 +20,42 @@
     letter-spacing: 0.5px;
     border-radius: 2.5rem;
 }
+
+.relative {
+    position: relative;
+}
+
+
+.underline-header--left {
+    &:before,
+    &:after {
+          left: 0;
+        }
+}
+
+.underline-header {
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0px;
+      height: 5px;
+      margin: 5px 0 0;
+      transition: $animate;
+      transition-duration: 0.5s;
+      opacity: 0;
+      background-color: darken(#4579f0,5%);
+    }
+
+    &:hover {
+        cursor: pointer;
+        &:before,
+        &:after {
+        width: 100%;
+        opacity: 1;
+        }
+        
+      }
+
+}

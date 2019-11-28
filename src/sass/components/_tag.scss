@@ -1,0 +1,14 @@
+.tag {
+    transition: 0.2s;
+    & > a:link, & > a:visited {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+    }
+    &:hover {
+        transform: translateY(-0.5rem);
+    }
+}

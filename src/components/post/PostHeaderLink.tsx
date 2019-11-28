@@ -5,7 +5,7 @@ const PostBodyLink = (props) => {
     return (
         <Link href={`/[slug]`} as={`/${slug}`}>
             <h1 className="post__body-title">
-                <a className="post__body-link">{title}</a>
+                <a className="post__body-link relative underline-header underline-header--left">{title}</a>
             </h1>
         </Link>
     )

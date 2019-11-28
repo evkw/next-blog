@@ -8,18 +8,10 @@
     box-shadow: 0 1.5rem 4rem rgba($color-darkest-gray, 0.15);
 
     &__tags {
-        color: #fff;
-        font-weight: 600;
         position: absolute;
         top: -15px;
         text-align: center;
         width: 100%;
-
-        & > a:link, & > a:visited {
-            font-size: 1.5rem;
-            text-decoration: none;
-            color: #fff;
-        }
     }
 
     &__header {

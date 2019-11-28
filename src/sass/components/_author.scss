@@ -1,11 +1,6 @@
 .author {
-
     display: flex;
     flex-wrap: wrap;
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-template-rows: repeat(2, 1fr);
-    // grid-column-gap: 0;
-    // grid-row-gap: 2rem;
     
     &__avatar {
         height: 9rem;

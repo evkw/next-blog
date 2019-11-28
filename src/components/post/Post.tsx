@@ -17,7 +17,7 @@ const Post = (props) => {
     return (
         <article className={post.featured === true ? 'post feature' : 'post'} style={post.featured === false ? postStyle : null}>
             <div className="post__tags">
-               <Tag post={post}/>
+               <Tag tag={post.primary_tag}/>
             </div>
             <PostHeader post={post} />
             <div className="post__body">

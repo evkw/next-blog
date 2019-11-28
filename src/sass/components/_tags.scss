@@ -1,0 +1,9 @@
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+
+    & > *:not(:last-child) {
+        padding-right: 1rem;
+    }
+}

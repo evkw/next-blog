@@ -12,6 +12,12 @@ export const Footer = (props) => {
                 <Author author={author} />
             </div>
             <div className="border mt-medium"></div>
+            <div className="legal">
+                <p>Theme heavily inspired by Breek</p>
+                <p>Copyright &copy; by Evan Wallace</p>
+            </div>
         </footer>
     )
 }
+
+// https://themeforest.net/item/breek-a-masonry-theme-for-ghost/13112831
