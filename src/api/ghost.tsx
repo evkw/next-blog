@@ -16,6 +16,16 @@ export async function getPosts() {
     });
 }
 
+export async function getLatestArticles() {
+  return await api.posts
+    .browse({
+      limit: 3
+    })
+    .catch(err => {
+      console.error(err);
+    });
+}
+
 export async function getSinglePost(postSlug) {
   return await api.posts
     .read({

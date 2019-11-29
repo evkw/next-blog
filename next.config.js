@@ -16,6 +16,11 @@ module.exports = withSass({
 
     return config
   },
+  exportPathMap: () => {
+    return {
+      '/': { page: '/' }
+    };
+  },
   serverRuntimeConfig: { // Will only be available on the server side
    ghost: {
        url: process.env.REACT_APP_GHOST_URL,

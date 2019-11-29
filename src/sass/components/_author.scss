@@ -1,7 +1,9 @@
 .author {
-    display: flex;
-    flex-wrap: wrap;
-    
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     &__avatar {
         height: 9rem;
         width: 9rem;

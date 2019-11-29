@@ -1,5 +1,5 @@
 import '../sass/main.scss';
-import { getSinglePost, getAuthor, getTags } from 'src/api/ghost';
+import { getSinglePost, getAuthor, getTags, getLatestArticles } from 'src/api/ghost';
 import Header from '@layouts/Header';
 import Footer from '@layouts/Footer';
 
@@ -10,7 +10,7 @@ import PostPublished from '@components/PostPublished';
 
 
 const PostPage = (props) => {
-  const { post, author, tags } = props;
+  const { post, author, tags, latestArticles } = props;
 
   useEffect(() => {
     // Highlight code samples
@@ -41,7 +41,7 @@ const PostPage = (props) => {
         </article>
       </main>
 
-      <Footer author={author} tags={tags} />
+      <Footer author={author} tags={tags} latestArticles={latestArticles} />
     </div >
   )
 }
@@ -50,7 +50,8 @@ PostPage.getInitialProps = async (params) => {
   return {
     post: await getSinglePost(params.query.slug),
     author: await getAuthor('evan'),
-    tags: await getTags()
+    tags: await getTags(),
+    latestArticles: await getLatestArticles()
   }
 };
 

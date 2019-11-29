@@ -3,11 +3,11 @@ import LatestArticles from '@components/LatestArticles';
 import Tags from './Tags';
 
 export const Footer = (props) => {
-    const { author, tags } = props;
+    const { author, tags, latestArticles } = props;
     return (
         <footer className="grid-container footer">
             <div className="footer-grid">
-                <LatestArticles />
+                <LatestArticles latestArticles={latestArticles}/>
                 <Tags tags={tags} />
                 <Author author={author} />
             </div>
