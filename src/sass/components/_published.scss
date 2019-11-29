@@ -1,0 +1,14 @@
+.published {
+    display: flex;
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: currentColor;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-left: 1.5rem;
+    }
+}

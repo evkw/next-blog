@@ -21,7 +21,7 @@ const Post = (props) => {
             </div>
             <PostHeader post={post} />
             <div className="post__body">
-                <PostPublished published_at={post.published_at} />
+                <PostPublished className="post__body-published" published_at={post.published_at} accent={post.featured}/>
                 <PostBodyLink slug={post.slug} title={post.title} />
                 <p className="post__body-excerpt">{post.custom_excerpt}</p>
             </div>

@@ -19,6 +19,19 @@
         color: #222;
     }
 
+    &__feature-image {
+
+        img {
+            width: 100%;
+            border-radius: 1.5rem;
+        }
+    }
+
+    .kg-image-card > img {
+        width: 100%;
+        border-radius: 1.5rem;
+    }
+
     h2 {
         font-family: "Montserrat", sans-serif;
         font-size: 2.4rem;

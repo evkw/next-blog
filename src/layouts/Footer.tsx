@@ -13,13 +13,11 @@ export const Footer = (props) => {
             </div>
             <div className="border mt-medium"></div>
             <div className="legal">
-                <p>Theme heavily inspired by Breek</p>
-                <p>Copyright &copy; by Evan Wallace</p>
+                <p>Theme heavily inspired by <a href="https://themeforest.net/item/breek-a-masonry-theme-for-ghost/13112831">Breek</a></p>
+                <p>Copyright &copy; Evan Wallace</p>
             </div>
         </footer>
     )
 }
 
 export default Footer;
-
-// https://themeforest.net/item/breek-a-masonry-theme-for-ghost/13112831

@@ -3,18 +3,39 @@ import { getSinglePost, getAuthor, getTags } from 'src/api/ghost';
 import Header from '@layouts/Header';
 import Footer from '@layouts/Footer';
 
+import Prism from "prismjs";
+
+import { useEffect } from 'react';
+import PostPublished from '@components/PostPublished';
+
 
 const PostPage = (props) => {
   const { post, author, tags } = props;
-  console.log(post);
+
+  useEffect(() => {
+    // Highlight code samples
+    Prism.highlightAll();
+  });
+
+
+  if(!post) {
+    return null;
+  }
+
   return (
     <div>
       <Header />
       <main className="grid-container">
         <article className="post-page mt-large">
           <div className="post-page__content ">
-
-            <h1 className="post-page__title">{post.title}</h1>
+            <header>
+              <div className="post-page__feature-image mb-small">
+                <img src={post.feature_image} />
+              </div>
+              <PostPublished accent published_at={post.published_at} />
+              <h1 className="post-page__title">{post.title}</h1>
+              
+            </header>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
         </article>

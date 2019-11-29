@@ -21,7 +21,7 @@
     "paths": {
       "@config/*": ["conf/*"],
       "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
+      "@layouts/*": ["src/layouts/*"]
     }
   },
   "exclude": [
