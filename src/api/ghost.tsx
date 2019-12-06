@@ -55,3 +55,12 @@ export async function getTags() {
       console.error(err);
     });
 }
+
+export async function search(term: string) {
+  const posts = api.posts.browse({limit: 5, include: 'title', filter:`title:${term}`})
+
+  const blah = await posts;
+
+  console.log(blah);
+  return blah;
+}

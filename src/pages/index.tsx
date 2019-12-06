@@ -1,7 +1,7 @@
 
 import '../sass/main.scss';
 
-import { getPosts, getAuthor, getTags } from '../api/ghost';
+import { getPosts, getAuthor, getTags, getLatestArticles } from '../api/ghost';
 import Header from '@layouts/Header';
 import Post from '@layouts/Post';
 import Footer from '@layouts/Footer';
@@ -16,7 +16,7 @@ const Home = (props: HomeProps) => {
                     {props.posts.map(post => <Post key={post.id} post={post}></Post>)}
                 </div>
             </main>
-            <Footer author={props.author} tags={props.tags}/>
+            <Footer author={props.author} tags={props.tags} latestArticles={props.latestArticles}/>
         </div>
 
     )
@@ -26,7 +26,8 @@ Home.getInitialProps = async () => {
     return { 
         posts: await getPosts(),
         author: await getAuthor('evan'),
-        tags: await getTags()
+        tags: await getTags(),
+        latestArticles: await getLatestArticles(),
      }
 }
 
@@ -36,4 +37,5 @@ interface HomeProps {
     posts: any;
     author: any;
     tags: any;
+    latestArticles: any;
 }

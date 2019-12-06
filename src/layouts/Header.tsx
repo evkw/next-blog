@@ -5,7 +5,7 @@ export const Header = (props) => {
         <header className="grid-container">
             <nav className="top-nav">
                 <div className="top-nav__logo">
-                    <a href="/">Icon</a>
+                &#123; Ev's_Dev &#125;
                 </div>
 
                 <Search className="top-nav__search" />

@@ -6,6 +6,7 @@
 
 .latest-article {
     display: flex;
+    color: #fff;
 
     &:not(:last-child) {
         margin-bottom: 2rem;
@@ -19,5 +20,16 @@
         border-radius: 50%;
         background-size: 'cover';
         background-position: 'center';
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1.5rem;
+
+        a {
+            cursor: pointer;
+        }
     }
 }
